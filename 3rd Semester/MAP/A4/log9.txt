@@ -1,0 +1,289 @@
+ExeStack: 
+((Integer v), ((Variable name: v = Integer: 4), ((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v)))))
+SymbolTable: 
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Integer v)
+((Variable name: v = Integer: 4), ((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v))))
+SymbolTable: 
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+((Variable name: v = Integer: 4), ((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v))))
+SymbolTable: 
+v --> Integer: 0
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Variable name: v = Integer: 4)
+((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v)))
+SymbolTable: 
+v --> Integer: 0
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v)))
+SymbolTable: 
+v --> Integer: 4
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 4
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 4
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 4
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 4
+Out: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 3
+Out: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 3
+Out: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 3
+Out: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 3
+Out: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 2
+Out: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 2
+Out: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 2
+Out: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 2
+Out: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 1
+Out: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 1
+Out: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 1
+Out: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 1
+Out: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+SymbolTable: 
+v --> Integer: 0
+Out: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Print(v))
+SymbolTable: 
+v --> Integer: 0
+Out: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+SymbolTable: 
+v --> Integer: 0
+Out: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+Integer: 0
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+

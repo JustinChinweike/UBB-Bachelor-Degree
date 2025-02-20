@@ -1,0 +1,215 @@
+ExeStack: 
+((Ref(Integer) v), (( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))))))
+SymbolTable: 
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Ref(Integer) v)
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))))
+SymbolTable: 
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))))
+SymbolTable: 
+v --> (0, Integer)
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+( Allocate in heap: v --> Integer: 20)
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))))
+SymbolTable: 
+v --> (0, Integer)
+Out: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+ExeStack: 
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))))
+SymbolTable: 
+v --> (1, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Ref(Ref(Integer)) a)
+(( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))
+SymbolTable: 
+v --> (1, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+ExeStack: 
+(( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))
+SymbolTable: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+ExeStack: 
+( Allocate in heap: a --> v)
+(( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))
+SymbolTable: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+ExeStack: 
+(( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))
+SymbolTable: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+ExeStack: 
+( Allocate in heap: v --> Integer: 30)
+(( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))
+SymbolTable: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+ExeStack: 
+(( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))
+SymbolTable: 
+a --> (2, Ref(Integer))
+v --> (3, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+3 --> Integer: 30
+-------------------------------------------------------------------------
+
+ExeStack: 
+( Allocate in heap: a --> v)
+((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))
+SymbolTable: 
+a --> (2, Ref(Integer))
+v --> (3, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+3 --> Integer: 30
+-------------------------------------------------------------------------
+
+ExeStack: 
+((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))
+SymbolTable: 
+a --> (4, Ref(Integer))
+v --> (3, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+ExeStack: 
+(Ref(Integer) b)
+(( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))
+SymbolTable: 
+a --> (4, Ref(Integer))
+v --> (3, Integer)
+Out: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+ExeStack: 
+(( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))
+SymbolTable: 
+a --> (4, Ref(Integer))
+b --> (0, Integer)
+v --> (3, Integer)
+Out: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+ExeStack: 
+( Allocate in heap: b --> Integer: 1)
+( Allocate in heap: a --> b)
+SymbolTable: 
+a --> (4, Ref(Integer))
+b --> (0, Integer)
+v --> (3, Integer)
+Out: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+ExeStack: 
+( Allocate in heap: a --> b)
+SymbolTable: 
+a --> (4, Ref(Integer))
+b --> (5, Integer)
+v --> (3, Integer)
+Out: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+5 --> Integer: 1
+-------------------------------------------------------------------------
+
+ExeStack: 
+SymbolTable: 
+a --> (6, Ref(Integer))
+b --> (5, Integer)
+v --> (3, Integer)
+Out: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+5 --> Integer: 1
+6 --> (5, Integer)
+-------------------------------------------------------------------------
+
