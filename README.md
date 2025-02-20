@@ -11,7 +11,7 @@
 - [Analysis](1st_Semester/Analysis)
    
 ### 📂 Second Semester
-- [🏗 Geometry](2ndSemester/Geometry)
+- [🏗 Geometry](2nd Semester/Geometry)
 - [🔍 Graph Theory](2nd_Semester/Graph_Theory/)
 - [🏛 Object-Oriented Programming](2nd_Semester/Object-Oriented_Programming/)
 - [⚙️ Operating Systems](2nd_Semester/Operating_Systems/)
