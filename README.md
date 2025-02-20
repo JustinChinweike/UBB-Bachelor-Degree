@@ -15,5 +15,7 @@
 - [🔍 Graph Theory](2nd Semester/Graph Theory)
 - [🏛 Object-Oriented Programming](2nd Semester/Object-OrientedProgramming)
 - [⚙️ Operating Systems](2nd Semester/Operating Systems)
-- [🌲Data Structures and Algorithms](2nd Semester/Data Structuresand Algorithms)
+- [🌲Data Structures and Algorithms](2nd Semester/Data Structures and Algorithms)
 - [🌀 Dynamic Systems](2nd Semester/Dynamic Systems)
+
+
