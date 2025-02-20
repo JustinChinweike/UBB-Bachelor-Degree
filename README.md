@@ -2,7 +2,7 @@
 🚀 UBB Computer Science Projects
 
 
-## Semester 📖
+## FIRST YEAR 
 ### 1st Semester
 - [Algebra](1st_Semester/Algebra)
 - [Computational_Logic](1st_Semester/Computational_Logic)
