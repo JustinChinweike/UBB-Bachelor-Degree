@@ -1,0 +1,66 @@
+Out: 
+((Integer v), ((Variable name: v = Integer: 2), (Print(v))))
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Integer v)
+((Variable name: v = Integer: 2), (Print(v)))
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+((Variable name: v = Integer: 2), (Print(v)))
+
+SymTable: 
+Variable name: v Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Variable name: v = Integer: 2)
+(Print(v))
+
+SymTable: 
+Variable name: v Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Print(v))
+
+SymTable: 
+Variable name: v Integer: 2
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+
+SymTable: 
+Variable name: v Integer: 2
+
+Out: 
+Integer: 2
+
+FileTable: 
+
+---------------------------------------------------------------------

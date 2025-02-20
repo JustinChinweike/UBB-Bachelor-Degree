@@ -1,0 +1,142 @@
+Out: 
+((Integer a), ((Integer b), ((Variable name: a = Integer: 2 + Integer: 3 * Integer: 5), ((Variable name: b = a + Integer: 1), (Print(b))))))
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Integer a)
+((Integer b), ((Variable name: a = Integer: 2 + Integer: 3 * Integer: 5), ((Variable name: b = a + Integer: 1), (Print(b)))))
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+((Integer b), ((Variable name: a = Integer: 2 + Integer: 3 * Integer: 5), ((Variable name: b = a + Integer: 1), (Print(b)))))
+
+SymTable: 
+a --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Integer b)
+((Variable name: a = Integer: 2 + Integer: 3 * Integer: 5), ((Variable name: b = a + Integer: 1), (Print(b))))
+
+SymTable: 
+a --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+((Variable name: a = Integer: 2 + Integer: 3 * Integer: 5), ((Variable name: b = a + Integer: 1), (Print(b))))
+
+SymTable: 
+a --> Integer: 0
+b --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Variable name: a = Integer: 2 + Integer: 3 * Integer: 5)
+((Variable name: b = a + Integer: 1), (Print(b)))
+
+SymTable: 
+a --> Integer: 0
+b --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+((Variable name: b = a + Integer: 1), (Print(b)))
+
+SymTable: 
+a --> Integer: 17
+b --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Variable name: b = a + Integer: 1)
+(Print(b))
+
+SymTable: 
+a --> Integer: 17
+b --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Print(b))
+
+SymTable: 
+a --> Integer: 17
+b --> Integer: 18
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+
+SymTable: 
+a --> Integer: 17
+b --> Integer: 18
+
+Out: 
+Integer: 18
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+
+SymTable: 
+a --> Integer: 17
+b --> Integer: 18
+
+Out: 
+Integer: 18
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+
+SymTable: 
+a --> Integer: 17
+b --> Integer: 18
+
+Out: 
+Integer: 18
+
+FileTable: 
+
+---------------------------------------------------------------------

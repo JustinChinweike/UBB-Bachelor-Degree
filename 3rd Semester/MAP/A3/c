@@ -1,0 +1,131 @@
+Out: 
+((Boolean a), ((Integer v), ((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v))))))
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Boolean a)
+((Integer v), ((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))))
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+((Integer v), ((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))))
+
+SymTable: 
+a --> Boolean: false
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Integer v)
+((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v))))
+
+SymTable: 
+a --> Boolean: false
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v))))
+
+SymTable: 
+a --> Boolean: false
+v --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Variable name: a = Boolean: true)
+((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))
+
+SymTable: 
+a --> Boolean: false
+v --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))
+
+SymTable: 
+a --> Boolean: true
+v --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3))
+(Print(v))
+
+SymTable: 
+a --> Boolean: true
+v --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Variable name: v = Integer: 2)
+(Print(v))
+
+SymTable: 
+a --> Boolean: true
+v --> Integer: 0
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Print(v))
+
+SymTable: 
+a --> Boolean: true
+v --> Integer: 2
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+
+SymTable: 
+a --> Boolean: true
+v --> Integer: 2
+
+Out: 
+Integer: 2
+
+FileTable: 
+
+---------------------------------------------------------------------

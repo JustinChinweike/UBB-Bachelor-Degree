@@ -1,0 +1,170 @@
+Out: 
+((String varf), ((Variable name: varf = String: test.in), (openRFile(varf), ((Integer varc), (readFile(varf , varc), (readFile(varf , varc), closeRFile(varf)))))))
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(String varf)
+((Variable name: varf = String: test.in), (openRFile(varf), ((Integer varc), (readFile(varf , varc), (readFile(varf , varc), closeRFile(varf))))))
+
+SymTable: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+((Variable name: varf = String: test.in), (openRFile(varf), ((Integer varc), (readFile(varf , varc), (readFile(varf , varc), closeRFile(varf))))))
+
+SymTable: 
+varf --> String: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(Variable name: varf = String: test.in)
+(openRFile(varf), ((Integer varc), (readFile(varf , varc), (readFile(varf , varc), closeRFile(varf)))))
+
+SymTable: 
+varf --> String: 
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+(openRFile(varf), ((Integer varc), (readFile(varf , varc), (readFile(varf , varc), closeRFile(varf)))))
+
+SymTable: 
+varf --> String: test.in
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+openRFile(varf)
+((Integer varc), (readFile(varf , varc), (readFile(varf , varc), closeRFile(varf))))
+
+SymTable: 
+varf --> String: test.in
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
+Out: 
+((Integer varc), (readFile(varf , varc), (readFile(varf , varc), closeRFile(varf))))
+
+SymTable: 
+varf --> String: test.in
+
+Out: 
+
+FileTable: 
+String: test.in --> java.io.BufferedReader@5fa7e7ff
+
+---------------------------------------------------------------------
+Out: 
+(Integer varc)
+(readFile(varf , varc), (readFile(varf , varc), closeRFile(varf)))
+
+SymTable: 
+varf --> String: test.in
+
+Out: 
+
+FileTable: 
+String: test.in --> java.io.BufferedReader@5fa7e7ff
+
+---------------------------------------------------------------------
+Out: 
+(readFile(varf , varc), (readFile(varf , varc), closeRFile(varf)))
+
+SymTable: 
+varf --> String: test.in
+varc --> Integer: 0
+
+Out: 
+
+FileTable: 
+String: test.in --> java.io.BufferedReader@5fa7e7ff
+
+---------------------------------------------------------------------
+Out: 
+readFile(varf , varc)
+(readFile(varf , varc), closeRFile(varf))
+
+SymTable: 
+varf --> String: test.in
+varc --> Integer: 0
+
+Out: 
+
+FileTable: 
+String: test.in --> java.io.BufferedReader@5fa7e7ff
+
+---------------------------------------------------------------------
+Out: 
+(readFile(varf , varc), closeRFile(varf))
+
+SymTable: 
+varf --> String: test.in
+varc --> Integer: 15
+
+Out: 
+
+FileTable: 
+String: test.in --> java.io.BufferedReader@5fa7e7ff
+
+---------------------------------------------------------------------
+Out: 
+readFile(varf , varc)
+closeRFile(varf)
+
+SymTable: 
+varf --> String: test.in
+varc --> Integer: 15
+
+Out: 
+
+FileTable: 
+String: test.in --> java.io.BufferedReader@5fa7e7ff
+
+---------------------------------------------------------------------
+Out: 
+closeRFile(varf)
+
+SymTable: 
+varf --> String: test.in
+varc --> Integer: 50
+
+Out: 
+
+FileTable: 
+String: test.in --> java.io.BufferedReader@5fa7e7ff
+
+---------------------------------------------------------------------
+Out: 
+
+SymTable: 
+varf --> String: test.in
+varc --> Integer: 50
+
+Out: 
+
+FileTable: 
+
+---------------------------------------------------------------------
