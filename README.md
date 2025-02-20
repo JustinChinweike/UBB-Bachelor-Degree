@@ -11,11 +11,10 @@
 - [Analysis](1st_Semester/Analysis)
    
 ### 📂 Second Semester
-- [🏗 Geometry](2nd Semester/Geometry)
-- [🔍 Graph Theory](2nd Semester/Graph Theory)
-- [🏛 Object-Oriented Programming](2nd Semester/Object-OrientedProgramming)
-- [⚙️ Operating Systems](2nd Semester/Operating Systems)
-- [🌲Data Structures and Algorithms](2nd Semester/Data Structures and Algorithms)
-- [🌀 Dynamic Systems](2nd Semester/Dynamic Systems)
-
+- [🏗 Geometry](2nd_Semester/Geometry/)
+- [🔍 Graph Theory](2nd_Semester/Graph_Theory/)
+- [🏛 Object-Oriented Programming](2nd_Semester/Object-Oriented_Programming/)
+- [⚙️ Operating Systems](2nd_Semester/Operating_Systems/)
+- [🌲 Data Structures and Algorithms](2nd_Semester/Data_Structures_and_Algorithms/)
+- [🌀 Dynamic Systems](2nd_Semester/Dynamic_Systems/)
 
