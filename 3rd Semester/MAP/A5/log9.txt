@@ -1,0 +1,603 @@
+Program ID: 8
+Execution Stack: 
+((Integer v), ((Variable name: v = Integer: 4), ((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v)))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Integer v)
+((Variable name: v = Integer: 4), ((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Integer v)
+((Variable name: v = Integer: 4), ((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Variable name: v = Integer: 4), ((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v))))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Variable name: v = Integer: 4), ((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v))))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = Integer: 4)
+((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v)))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = Integer: 4)
+((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v)))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v)))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1))), (Print(v)))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 4
+OutPut: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 3
+OutPut: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 3
+OutPut: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 3
+OutPut: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 3
+OutPut: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 3
+OutPut: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 3
+OutPut: 
+Integer: 4
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 3
+OutPut: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 3
+OutPut: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+Integer: 4
+Integer: 3
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 1
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 1
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 1
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+((Print(v)), (Variable name: v = v - Integer: 1))
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 1
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 1
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 1
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 1
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Variable name: v = v - Integer: 1)
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 1
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(While(v > Integer: 0)Execute ((Print(v)), (Variable name: v = v - Integer: 1)))
+(Print(v))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 8
+Execution Stack: 
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+Integer: 4
+Integer: 3
+Integer: 2
+Integer: 1
+Integer: 0
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+

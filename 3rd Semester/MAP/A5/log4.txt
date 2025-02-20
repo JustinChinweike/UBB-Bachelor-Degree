@@ -1,0 +1,357 @@
+Program ID: 3
+Execution Stack: 
+((String varf), ((Variable name: varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(String varf)
+((Variable name: varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(String varf)
+((Variable name: varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Variable name: varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol Table: 
+varf --> String: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Variable name: varf = String: test.in), ((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))))
+Symbol Table: 
+varf --> String: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Variable name: varf = String: test.in)
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol Table: 
+varf --> String: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Variable name: varf = String: test.in)
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol Table: 
+varf --> String: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol Table: 
+varf --> String: test.in
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Open file: 'varf'), ((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))))
+Symbol Table: 
+varf --> String: test.in
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Open file: 'varf')
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol Table: 
+varf --> String: test.in
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Open file: 'varf')
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol Table: 
+varf --> String: test.in
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol Table: 
+varf --> String: test.in
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Integer varc), ((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))))
+Symbol Table: 
+varf --> String: test.in
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Integer varc)
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol Table: 
+varf --> String: test.in
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Integer varc)
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol Table: 
+varf --> String: test.in
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 0
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Read from file: 'varf'), ((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf'))))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 0
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Read from file: 'varf')
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 0
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Read from file: 'varf')
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 0
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 15
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Read from file: 'varf'), ((Print(varc)), (Close file: 'varf')))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 15
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Read from file: 'varf')
+((Print(varc)), (Close file: 'varf'))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 15
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Read from file: 'varf')
+((Print(varc)), (Close file: 'varf'))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 15
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Print(varc)), (Close file: 'varf'))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 50
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+((Print(varc)), (Close file: 'varf'))
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 50
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Print(varc))
+(Close file: 'varf')
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 50
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Print(varc))
+(Close file: 'varf')
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 50
+OutPut: 
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Close file: 'varf')
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 50
+OutPut: 
+Integer: 50
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+(Close file: 'varf')
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 50
+OutPut: 
+Integer: 50
+FileTable: 
+String: test.in --> java.io.BufferedReader@45fe3ee3
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 50
+OutPut: 
+Integer: 50
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 3
+Execution Stack: 
+Symbol Table: 
+varf --> String: test.in
+varc --> Integer: 50
+OutPut: 
+Integer: 50
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
