@@ -6,8 +6,8 @@
 ### 📂 First Semester
 - [Algebra](1st_Semester/Algebra)
 - [Computational_Logic](1st_Semester/Computational_Logic)
-- [ASC (Architecture of Computer Systems)](1st_Semester/ASC (Architecture of Computer Systems))
-- [FP](1st_Semester/FP (Functional Programming))
+- [ASC (Architecture of Computer Systems)](1st_Semester/ASC (Architecture%20of %20Computer%20Systems))
+- [FP](1st_Semester/FP (Functional%20Programming))
 - [Analysis](1st_Semester/Analysis)
    
 ### 📂 Second Semester
