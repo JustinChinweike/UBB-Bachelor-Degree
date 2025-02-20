@@ -1,0 +1,101 @@
+Program ID: 0
+Execution Stack: 
+((Integer v), ((Variable name: v = Integer: 2), (Print(v))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 0
+Execution Stack: 
+(Integer v)
+((Variable name: v = Integer: 2), (Print(v)))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 0
+Execution Stack: 
+(Integer v)
+((Variable name: v = Integer: 2), (Print(v)))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 0
+Execution Stack: 
+((Variable name: v = Integer: 2), (Print(v)))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 0
+Execution Stack: 
+((Variable name: v = Integer: 2), (Print(v)))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 0
+Execution Stack: 
+(Variable name: v = Integer: 2)
+(Print(v))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 0
+Execution Stack: 
+(Variable name: v = Integer: 2)
+(Print(v))
+Symbol Table: 
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 0
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 0
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 0
+Execution Stack: 
+Symbol Table: 
+v --> Integer: 2
+OutPut: 
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+

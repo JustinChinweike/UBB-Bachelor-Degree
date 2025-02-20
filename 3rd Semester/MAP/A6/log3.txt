@@ -1,0 +1,220 @@
+Program ID: 2
+Execution Stack: 
+((Boolean a), ((Integer v), ((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Boolean a)
+((Integer v), ((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Boolean a)
+((Integer v), ((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+((Integer v), ((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))))
+Symbol Table: 
+a --> Boolean: false
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+((Integer v), ((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))))
+Symbol Table: 
+a --> Boolean: false
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Integer v)
+((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v))))
+Symbol Table: 
+a --> Boolean: false
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Integer v)
+((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v))))
+Symbol Table: 
+a --> Boolean: false
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v))))
+Symbol Table: 
+a --> Boolean: false
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+((Variable name: a = Boolean: true), ((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v))))
+Symbol Table: 
+a --> Boolean: false
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Variable name: a = Boolean: true)
+((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))
+Symbol Table: 
+a --> Boolean: false
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Variable name: a = Boolean: true)
+((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))
+Symbol Table: 
+a --> Boolean: false
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))
+Symbol Table: 
+a --> Boolean: true
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+((If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3)), (Print(v)))
+Symbol Table: 
+a --> Boolean: true
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3))
+(Print(v))
+Symbol Table: 
+a --> Boolean: true
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(If a) Then (Variable name: v = Integer: 2)Else ((Variable name: v = Integer: 3))
+(Print(v))
+Symbol Table: 
+a --> Boolean: true
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Variable name: v = Integer: 2)
+(Print(v))
+Symbol Table: 
+a --> Boolean: true
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Variable name: v = Integer: 2)
+(Print(v))
+Symbol Table: 
+a --> Boolean: true
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+a --> Boolean: true
+v --> Integer: 2
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+a --> Boolean: true
+v --> Integer: 2
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 2
+Execution Stack: 
+Symbol Table: 
+a --> Boolean: true
+v --> Integer: 2
+OutPut: 
+Integer: 2
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+

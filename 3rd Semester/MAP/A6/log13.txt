@@ -1,0 +1,1092 @@
+Program ID: 12
+Execution Stack: 
+((Ref(Integer) a), ((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Ref(Integer) a)
+((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Ref(Integer) a)
+((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))))
+Symbol Table: 
+a --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))))
+Symbol Table: 
+a --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Integer v)
+(( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))
+Symbol Table: 
+a --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Integer v)
+(( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))
+Symbol Table: 
+a --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))
+Symbol Table: 
+a --> (0, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))
+Symbol Table: 
+a --> (0, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+( Allocate in heap: a --> Integer: 10)
+(Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))
+Symbol Table: 
+a --> (0, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+( Allocate in heap: a --> Integer: 10)
+(Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))
+Symbol Table: 
+a --> (0, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v)))))
+((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v)))))
+((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Variable name: v = Integer: 30)
+((Print(v)), (Print((Read From Heap: a))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Variable name: v = Integer: 20)
+(Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Variable name: v = Integer: 30)
+((Print(v)), (Print((Read From Heap: a))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Variable name: v = Integer: 20)
+(Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Print(v)), (Print((Read From Heap: a))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Print(v)), (Print((Read From Heap: a))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Print(v))
+(Print((Read From Heap: a)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+Fork: (Write in Heap: a---> Integer: 40)
+((Print((Read From Heap: a))), (Print(v)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Print(v))
+(Print((Read From Heap: a)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+Fork: (Write in Heap: a---> Integer: 40)
+((Print((Read From Heap: a))), (Print(v)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Print((Read From Heap: a)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+((Print((Read From Heap: a))), (Print(v)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 14
+Execution Stack: 
+(Write in Heap: a---> Integer: 40)
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Print((Read From Heap: a)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+((Print((Read From Heap: a))), (Print(v)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 14
+Execution Stack: 
+(Write in Heap: a---> Integer: 40)
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+Integer: 30
+Integer: 10
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Print((Read From Heap: a)))
+(Print(v))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 14
+Execution Stack: 
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Print((Read From Heap: a)))
+(Print(v))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+Integer: 40
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+Integer: 40
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+Integer: 40
+Integer: 20
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Ref(Integer) a), ((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Ref(Integer) a)
+((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Ref(Integer) a)
+((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))))
+Symbol Table: 
+a --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Integer v), (( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))))
+Symbol Table: 
+a --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Integer v)
+(( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))
+Symbol Table: 
+a --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Integer v)
+(( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))
+Symbol Table: 
+a --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))
+Symbol Table: 
+a --> (0, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(( Allocate in heap: a --> Integer: 10), (Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))))
+Symbol Table: 
+a --> (0, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+( Allocate in heap: a --> Integer: 10)
+(Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))
+Symbol Table: 
+a --> (0, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+( Allocate in heap: a --> Integer: 10)
+(Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))
+Symbol Table: 
+a --> (0, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))), ((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a))))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v)))))
+((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+Fork: ((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v)))))
+((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Variable name: v = Integer: 30), ((Print(v)), (Print((Read From Heap: a)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+((Variable name: v = Integer: 20), (Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v)))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Variable name: v = Integer: 30)
+((Print(v)), (Print((Read From Heap: a))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Variable name: v = Integer: 20)
+(Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Variable name: v = Integer: 30)
+((Print(v)), (Print((Read From Heap: a))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Variable name: v = Integer: 20)
+(Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 0
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Print(v)), (Print((Read From Heap: a))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+((Print(v)), (Print((Read From Heap: a))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Fork: (Write in Heap: a---> Integer: 40), ((Print((Read From Heap: a))), (Print(v))))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Print(v))
+(Print((Read From Heap: a)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+Fork: (Write in Heap: a---> Integer: 40)
+((Print((Read From Heap: a))), (Print(v)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Print(v))
+(Print((Read From Heap: a)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+Fork: (Write in Heap: a---> Integer: 40)
+((Print((Read From Heap: a))), (Print(v)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Print((Read From Heap: a)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+((Print((Read From Heap: a))), (Print(v)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 14
+Execution Stack: 
+(Write in Heap: a---> Integer: 40)
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+(Print((Read From Heap: a)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+((Print((Read From Heap: a))), (Print(v)))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 14
+Execution Stack: 
+(Write in Heap: a---> Integer: 40)
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+FileTable: 
+Heap: 
+1 --> Integer: 10
+-------------------------------------------------------------------------
+
+Program ID: 12
+Execution Stack: 
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 30
+OutPut: 
+Integer: 30
+Integer: 10
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Print((Read From Heap: a)))
+(Print(v))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 14
+Execution Stack: 
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Print((Read From Heap: a)))
+(Print(v))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+Integer: 40
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+(Print(v))
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+Integer: 40
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+
+Program ID: 13
+Execution Stack: 
+Symbol Table: 
+a --> (1, Integer)
+v --> Integer: 20
+OutPut: 
+Integer: 30
+Integer: 10
+Integer: 40
+Integer: 20
+FileTable: 
+Heap: 
+1 --> Integer: 40
+-------------------------------------------------------------------------
+

@@ -1,0 +1,440 @@
+Program ID: 10
+Execution Stack: 
+((Ref(Integer) v), (( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(Ref(Integer) v)
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(Ref(Integer) v)
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))))
+Symbol Table: 
+v --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))))
+Symbol Table: 
+v --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: v --> Integer: 20)
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))))
+Symbol Table: 
+v --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: v --> Integer: 20)
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))))
+Symbol Table: 
+v --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))))
+Symbol Table: 
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))))
+Symbol Table: 
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(Ref(Ref(Integer)) a)
+(( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))
+Symbol Table: 
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(Ref(Ref(Integer)) a)
+(( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))
+Symbol Table: 
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))
+Symbol Table: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: a --> v), (( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))))
+Symbol Table: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: a --> v)
+(( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))
+Symbol Table: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: a --> v)
+(( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))
+Symbol Table: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: v --> Integer: 30), (( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: v --> Integer: 30)
+(( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: v --> Integer: 30)
+(( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+3 --> Integer: 30
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: a --> v), ((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+3 --> Integer: 30
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: a --> v)
+((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+3 --> Integer: 30
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: a --> v)
+((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+3 --> Integer: 30
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))
+Symbol Table: 
+a --> (4, Ref(Integer))
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+((Ref(Integer) b), (( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b)))
+Symbol Table: 
+a --> (4, Ref(Integer))
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(Ref(Integer) b)
+(( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))
+Symbol Table: 
+a --> (4, Ref(Integer))
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(Ref(Integer) b)
+(( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))
+Symbol Table: 
+a --> (4, Ref(Integer))
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))
+Symbol Table: 
+a --> (4, Ref(Integer))
+b --> (0, Integer)
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+(( Allocate in heap: b --> Integer: 1), ( Allocate in heap: a --> b))
+Symbol Table: 
+a --> (4, Ref(Integer))
+b --> (0, Integer)
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: b --> Integer: 1)
+( Allocate in heap: a --> b)
+Symbol Table: 
+a --> (4, Ref(Integer))
+b --> (0, Integer)
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: b --> Integer: 1)
+( Allocate in heap: a --> b)
+Symbol Table: 
+a --> (4, Ref(Integer))
+b --> (0, Integer)
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: a --> b)
+Symbol Table: 
+a --> (4, Ref(Integer))
+b --> (5, Integer)
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+5 --> Integer: 1
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+( Allocate in heap: a --> b)
+Symbol Table: 
+a --> (4, Ref(Integer))
+b --> (5, Integer)
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+5 --> Integer: 1
+-------------------------------------------------------------------------
+
+Program ID: 10
+Execution Stack: 
+Symbol Table: 
+a --> (6, Ref(Integer))
+b --> (5, Integer)
+v --> (3, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+3 --> Integer: 30
+4 --> (3, Integer)
+5 --> Integer: 1
+6 --> (5, Integer)
+-------------------------------------------------------------------------
+

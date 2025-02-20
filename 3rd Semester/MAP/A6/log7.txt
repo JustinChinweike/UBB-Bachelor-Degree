@@ -1,0 +1,263 @@
+Program ID: 6
+Execution Stack: 
+((Ref(Integer) v), (( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5)))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(Ref(Integer) v)
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(Ref(Integer) v)
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5))))))
+Symbol Table: 
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5))))))
+Symbol Table: 
+v --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(( Allocate in heap: v --> Integer: 20), ((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5))))))
+Symbol Table: 
+v --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+( Allocate in heap: v --> Integer: 20)
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5)))))
+Symbol Table: 
+v --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+( Allocate in heap: v --> Integer: 20)
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5)))))
+Symbol Table: 
+v --> (0, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5)))))
+Symbol Table: 
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+((Ref(Ref(Integer)) a), (( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5)))))
+Symbol Table: 
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(Ref(Ref(Integer)) a)
+(( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5))))
+Symbol Table: 
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(Ref(Ref(Integer)) a)
+(( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5))))
+Symbol Table: 
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5))))
+Symbol Table: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(( Allocate in heap: a --> v), ((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5))))
+Symbol Table: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+( Allocate in heap: a --> v)
+((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5)))
+Symbol Table: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+( Allocate in heap: a --> v)
+((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5)))
+Symbol Table: 
+a --> (0, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5)))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+((Print((Read From Heap: v))), (Print((Read From Heap: (Read From Heap: a)) + Integer: 5)))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(Print((Read From Heap: v)))
+(Print((Read From Heap: (Read From Heap: a)) + Integer: 5))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(Print((Read From Heap: v)))
+(Print((Read From Heap: (Read From Heap: a)) + Integer: 5))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(Print((Read From Heap: (Read From Heap: a)) + Integer: 5))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+Integer: 20
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+(Print((Read From Heap: (Read From Heap: a)) + Integer: 5))
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+Integer: 20
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
+Program ID: 6
+Execution Stack: 
+Symbol Table: 
+a --> (2, Ref(Integer))
+v --> (1, Integer)
+OutPut: 
+Integer: 20
+Integer: 25
+FileTable: 
+Heap: 
+1 --> Integer: 20
+2 --> (1, Integer)
+-------------------------------------------------------------------------
+
