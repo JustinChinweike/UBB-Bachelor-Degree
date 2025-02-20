@@ -1,0 +1,89 @@
+% 2.
+% a. Write a predicate to remove all occurrences of a certain atom from a list.
+% b. Define a predicate to produce a list of pairs (atom n) from an initial list of atoms.
+% In this initial list atom has n occurrences.
+% Eg.: numberatom([1, 2, 1, 2, 1, 3, 1], X) => X = [[1, 4], [2, 2], [3, 1]].
+
+
+
+% a
+
+% Mathematical Model:
+% remove_occurences(l1...ln, e) =
+%   [], n = 0
+%   remove_occurences(l2...ln, e), if l1 = e
+%   l1 U remove_occurences(l2...ln, e), if l1 != e
+
+% remove_occurrences(L:list, E:number, R:list)
+% remove_occurrences(i, i, o)
+
+
+remove_occurrences([], _, []).               % Base case: if input list is empty, the result list is empty
+remove_occurrences([H|T], E, R) :-           % Recursive case: if the list is non-empty
+    H =:= E, !,                              % If the head element H is equal to E, skip it
+    remove_occurrences(T, E, R).             % Continue with the rest of the list T without including H
+remove_occurrences([H|T], E, [H|R]) :-       % Alternative case: if H is not equal to E
+    H =\= E,                                 % Ensure H is not equal to E
+    remove_occurrences(T, E, R).             % Include H in the result list and continue with the rest of the list
+
+
+
+% b
+
+% Mathematical Model:
+% count_occurences(l1...ln, e) =
+%   0, n = 0
+%   1 + count_occurences (l2...ln, e), e = l1
+%   count_occurences(l2...ln, e), e != l1
+
+% count_occurrences(L:list, E:atom, Count:int)
+% count_occurrences(i, i, o)
+
+count_occurrences([], _, 0).                 % Base case: if input list is empty, count is 0
+count_occurrences([H|T], E, Count) :-        % Recursive case: if the list is non-empty
+    H =:= E, !,                              % If the head element H is equal to E
+    count_occurrences(T, E, Count1),         % Recur with the tail T and store the count in Count1
+    Count is Count1 + 1.                     % Add 1 to Count1 since H matched E
+count_occurrences([H|T], E, Count) :-        % Alternative case: if H is not equal to E
+    H =\= E,                                 % Ensure H is not equal to E
+    count_occurrences(T, E, Count).          % Continue with the tail T without incrementing count
+
+% Mathematical Model:
+% remove_duplicates(L) =
+%   [], if L = []
+%   l1 + remove_duplicates(remove_occurences(T, H)) otherwise
+
+% remove_duplicates(L:list, R:list)
+% remove_duplicates(i, o)
+
+remove_duplicates([], []).                   % Base case: if input list is empty, result is an empty list
+remove_duplicates([H|T], [H|R]) :-           % Recursive case: if list is non-empty
+    remove_occurrences(T, H, NewT),          % Remove all instances of H from tail T, resulting in NewT
+    remove_duplicates(NewT, R).              % Recur with NewT to continue building the result list
+
+% Model matematic:
+% numberatom(L) =
+%   [], if L = []
+%   [l1, count_occurences(L, l1)] +
+%   numberatom(remove_occurences(L, l1)) otherwise
+
+% numberatom(L:list, R:list)
+% numberatom(i, o)
+
+numberatom(L, R) :-                          % Main predicate to produce a list of pairs (atom n)
+    remove_duplicates(L, UniqueAtoms),       % Step 1: remove duplicates from L to get a list of unique atoms
+    count_all(UniqueAtoms, L, R).            % Step 2: count occurrences of each unique atom
+
+% Mathematical Model:
+% count_all(Unique, L) =
+%   [], if Unique = []
+%   [[l1, count_occurrences(L, l1)]] + count_all(l2...ln, L), if Unique != []
+
+% count_all(Unique:list, L:list, R:list)
+% count_all(i, i, o)
+
+count_all([], _, []).                        % Base case: if Unique list is empty, result is an empty list
+count_all([H|T], L, [[H, Count]|R]) :-       % Recursive case: if Unique list has elements
+    count_occurrences(L, H, Count),          % Count occurrences of H in L and store it in Count
+    count_all(T, L, R).                      % Recur with the rest of Unique list T to continue building result list
+
