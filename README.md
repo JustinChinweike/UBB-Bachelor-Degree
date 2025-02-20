@@ -6,7 +6,7 @@
 ### 📂 First Semester
 - [Algebra](1st_Semester/Algebra)
 - [Computational_Logic](1st_Semester/Computational_Logic)
-- [ASC (Architecture of Computer Systems)](1st_Semester/ASC%20(Architecture%20of %20Computer%20Systems))
+- [ASC (Architecture of Computer Systems)](1st_Semester/ASC%20(Architecture%20of%20Computer%20Systems)
 - [FP](1st_Semester/FP%20(Functional%20Programming))
 - [Analysis](1st_Semester/Analysis)
    
@@ -17,3 +17,4 @@
 - [⚙️ Operating Systems](2nd%20Semester/Operating%20Systems/)
 - [🌲 Data Structures and Algorithms](2nd%20Semester/Data%20Structures%20and%20Algorithms/)
 - [🌀 Dynamic Systems](2nd%20Semester/Dynamic%20Systems/)
+
