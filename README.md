@@ -19,5 +19,4 @@
 - [🌀 Dynamic Systems](2nd%20Semester/Dynamic%20Systems/)
 
 
-#### SECOND YEAR
-
+SECOND YEAR 
