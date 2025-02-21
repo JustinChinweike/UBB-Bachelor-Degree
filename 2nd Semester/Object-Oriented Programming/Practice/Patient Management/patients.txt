@@ -1,0 +1,8 @@
+John Doe,myshit,Oncology,Dr. Garcia,
+Jane Smith,Flu,Pediatrics,Dr. Brown,2023-06-15
+Alice Johnson,Heart Attack,Cardiology,Dr. Smith,2023-06-20
+Bob Brown,Undiagnosed,,,2023-06-25
+Maria Garcia,Skin Cancer,Dermatology,Dr. Martinez,2023-06-30
+Michael Clark,Fracture,Orthopedics,Dr. Green,2023-07-05
+Jay Mith,Stroke,Neurology,,2023-09-30
+Junior Mafia,notmoving,Neurology,,2023-09-05
