@@ -1,60 +1,38 @@
-# Assignment 01
+# Assignment 06-07
+## Week 8
+* Implement at least requirements **1** and **2**.
+## Week 10
+* Implement all requirements
+* Requirements **4** and **5** must be implemented using inheritance and polymorphism.
 
-## Lab 1 activity
+## Bonus possibility (0.2p, deadline week 9)
+In addition to the file-based implementation for the repository, implement a true database-backed repository. For this, use inheritance and polymorphism. You are free to choose any type of database management system (e.g. `MySQL`, `SQLite`, `PostgreSQL`, `Couchbase` etc.).
 
-You should set up a C++ compiler and an IDE. Choose any IDE and compiler you prefer. Later on in the semester we will also work with the Qt framework. Microsoft Visual Studio 2022 can be integrated with Qt development tools.
+## Problem Statement
+For your solution to the previous assignment (Assignment 05-06), add the following features:
+1. Replace the templated DynamicVector with the STL vector. Use STL algorithms wherever possible in your application (e.g. in your filter function you could use `copy_if`, `count_if`). Replace all your for loops either with STL algorithms, or with C++11's range-based for loop.
 
-If you choose Microsoft Visual Studio, the *Community* version is free.
+2. Store repository data in a text file. When the program starts, entities are read from the file. Modifications made during program execution are stored in the file. Implement this using the `iostream` library. Create insertion and extraction operators for your entities and use these when reading/writing to files or the console.
 
-Create a new C project and a simple “Hello, World!” C application.
+3. Use exceptions to signal errors:
+    - from the repository;
+    - validation errors – validate your entities using Validator classes;
+    - create your own exception classes.
+    - validate program input.
 
-**Assignment 1 consists of the following requirements and is due in week 2.**
+4.	Depending on your assignment, store your (adoption list, movie watch list, shopping basket or tutorial watch list) in a file. When the application starts, the user should choose the type of file between `CSV` or `HTML`. Depending on the type, the application will save the list in the correct format.
 
-## Requirements
-- Write a **C application** (not C++!) with a menu based console interface which solves one of the problems below. 
-- Menu entries are expected for: 
-    - reading a vector of numbers from the console,
-    - solving each of the 2 required functionalities,
-    - exiting the program. 
-- Each requirement must be resolved using at least one function. Functions communicate via input/output parameters and the return statement.
-- Provide specifications for all functions.
+    **Indications**\
+    The CSV file will contain each entity on one line and the attributes will be separated by comma \
+    The HTML file will contain a table, in which each row holds the data of one entity. The columns of the table will contain the names of the data attributes.\
+    These are exemplified in the [example.csv](example.csv) and [example.html](example.html) files.
+    `CSV` and `HTML` files are used to save and display data to the user; they act as program outputs, so data should not be read from them!
 
-## Problem Statements
-1.  **a.** Generate all the prime numbers smaller than a given natural number `n`.\
-**b.** Given a vector of numbers, find the longest increasing contiguous subsequence, such the sum of that any 2 consecutive elements is a prime number.
+5. Add a new command, allowing the user to see the:
+    * adoption list
+    * movie watch list
+    * shopping basket
+    * tutorial watch list\
+Displaying the list means opening the saved file (`CSV` or `HTML`) with the correct application (`CSV` files using Notepad, Notepad++, Microsoft Excel etc. and `HTML` files using a browser)
 
-2.  **a.** Generate the first `n` prime numbers (`n` is a given natural number).\
-**b.** Given a vector of numbers, find the longest contiguous subsequence such that any two consecutive elements are relatively prime.
-
-3.	**a.** Print the Pascal triangle of dimension `n` of all combinations `C(m,k)` of m objects taken by `k, k = 0, 1, ..., m`, for line `m, where m = 1, 2, ..., n`.\
-**b.** Given a vector of numbers, find the longest contiguous subsequence of prime numbers.
-
-4.	**a.** Compute the approximated value of square root of a positive real number. The precision is provided by the user.\
-**b.** Given a vector of numbers, find the longest contiguous subsequence such that the difference of any two consecutive elements is a prime number.
-
-5.	**a.** Print the exponent of a prime number `p` from the decomposition in prime factors of a given number `n` (n is a non-null natural number).\
-**b.** Given a vector of numbers, find the longest contiguous subsequence such that any two consecutive elements are relatively prime.
-
-6.	**a.** Read a sequence of natural numbers (sequence ended by `0`) and determine the number of `0` digits of the product of the read numbers.\
-**b.** Given a vector of numbers, find the longest contiguous subsequence such that the sum of any two consecutive elements is a prime number.
-
-7.	**a.** Read sequences of positive integer numbers (reading of each sequence ends by `0`, reading of all the sequences ends by `-1`) and determine the maximum element of each sequence and the maxim element of the global sequence.\
-**b.** Given a vector of numbers, find the longest contiguous subsequence such that all elements are in a given interval.
-
-8.	**a.** Determine the value `x^n`, where `x` is a real number and `n` is a natural number, by using multiplication and squared operations.\
-**b.** Given a vector of numbers, find the longest contiguous subsequence such that any two consecutive elements have contrary signs.
-
-9.	**a.** Decompose a given natural number in its prime factors.\
-**b.** Given a vector of numbers, find the longest contiguous subsequence such that any consecutive elements contain the same digits.
-
-10.	**a.** Decompose a given even natural number, greater than 2, as a sum of two prime numbers (Goldbach’s conjecture).\
-**b.** Given a vector of numbers, find the longest contiguous subsequence such that any consecutive elements have at least 2 distinct digits in common.
-
-11.	**a.** Determine the first `n` pairs of twin numbers, where n is a given natural and non-null number. Two prime numbers p and q are called twin if `q – p = 2`.\
-**b.** Given a vector of numbers, find the longest decreasing contiguous subsequence.
-
-12.	**a.** Determine all the numbers smaller than a given natural and non-null number `n` and that are relatively prime to n.\
-**b.** Given a vector of numbers, find the longest contiguous subsequence with the maximum sum.
-
-13.	**a.** Determine the first (and only) 8 natural numbers `(x1, x2,  …,  x8)` greater than 2 with the following property: all the natural numbers smaller than `xi` and that are relatively prime with `xi` (except for the number 1) are prime, `i =1,2, …, n`.\
-**b.** Given a vector of numbers, find the longest contiguous subsequence such that any consecutive elements contain the same digits.
+6. Create a UML class diagram for your entire application. For this, you can use any tool that you like ([StarUML](https://staruml.io/) or [LucidChart](https://www.lucidchart.com/) are only some examples. Many other options exist.
