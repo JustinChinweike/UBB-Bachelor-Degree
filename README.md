@@ -20,9 +20,17 @@
 
 
 # SECOND YEAR
-### 📂 Third Semester 
+## 📂 Third Semester 
 - [🌐 Computer Networks](3rd%20Semester/Computer_Networks/)   
 - [🗄️ Database](3rd%20Semester/DataBase/)
 - [🧠 Functional and Logic Programming](3rd%20Semester/Functional%20And%20Logic%20Programming/)
 - [🧩 Advanced Methods of Programming (MAP)](3rd%20Semester/MAP/)
 - [📊 Probability and Statistics](3rd%20Semester/Probabilty%20and%20Statistics) 
+
+### 📂 Fourth Semester 
+- [🤖 Artificial Intelligence](Fourth%20Semester/Artificial_Intelligence/)   
+- [🗄️Database Management Systems](Fourth%20Semester/Database_Management_Systems/)
+- [🛠️ Software_Engineering](Fourth%20Semester/Software_Engineering/)
+- [📐 Systems for Design and Implementation](Fourth%20Semester/Systems_for_Design_and_Implementation/)
+- [🌍 Web Programming](Fourth%20Semester/Web_Programming) 
+
