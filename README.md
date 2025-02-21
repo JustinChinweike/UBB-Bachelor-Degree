@@ -4,11 +4,11 @@
 
 ## FIRST YEAR 
 ### 📂 First Semester
-- [Algebra](1st_Semester/Algebra)
-- [Computational_Logic](1st_Semester/Computational_Logic)
-- [ASC (Architecture of Computer Systems)](1st_Semester/ASC)
-- [FP (Fundamentals Of Programming)](1st_Semester/FP)
-- [Analysis](1st_Semester/Analysis)
+- [➕ Algebra](1st_Semester/Algebra)
+- [🤔 Computational_Logic](1st_Semester/Computational_Logic)
+- [🏗️ ASC (Architecture of Computer Systems)](1st_Semester/ASC)
+- [💻 FP (Fundamentals Of Programming)](1st_Semester/FP)
+- [📉 Analysis](1st_Semester/Analysis)
    
 ### 📂 Second Semester
 - [🏗 Geometry](2nd%20Semester/Geometry/)
