@@ -25,5 +25,4 @@
 - [🗄️ Database](3rd%20Semester/DataBase/)
 - [🧠 Functional and Logic Programming](3rd%20Semester/Functional%20And%20Logic%20Programming/)
 - [🧩 Advanced Methods of Programming (MAP)](3rd%20Semester/MAP/)
-- [📊 Probability and Statistics](3rd%20Semester/Probability%20and%20Statistics/)
-
+- [📊 Probability and Statistics](3rd%20Semester/Probabilty%20and%20Statistics) 
