@@ -19,15 +19,15 @@
 - [🌀 Dynamic Systems](2nd%20Semester/Dynamic%20Systems/)
 
 
-# SECOND YEAR
-## 📂 Third Semester 
+## SECOND YEAR
+### 📂 Third Semester 
 - [🌐 Computer Networks](3rd%20Semester/Computer_Networks/)   
 - [🗄️ Database](3rd%20Semester/DataBase/)
 - [🧠 Functional and Logic Programming](3rd%20Semester/Functional%20And%20Logic%20Programming/)
 - [🧩 Advanced Methods of Programming (MAP)](3rd%20Semester/MAP/)
 - [📊 Probability and Statistics](3rd%20Semester/Probabilty%20and%20Statistics) 
 
-## 📂 Fourth Semester 
+### 📂 Fourth Semester 
 - [🤖 Artificial Intelligence](4th%20Semester/Artificial_Intelligence/)  
 - [🗄️Database Management Systems](4th%20Semester/Database_Management_Systems/)
 - [🛠️ Software_Engineering](4th%20Semester/Software_Engineering/)
