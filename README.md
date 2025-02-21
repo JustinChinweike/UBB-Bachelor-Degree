@@ -27,10 +27,10 @@
 - [🧩 Advanced Methods of Programming (MAP)](3rd%20Semester/MAP/)
 - [📊 Probability and Statistics](3rd%20Semester/Probabilty%20and%20Statistics) 
 
-### 📂 Fourth Semester 
-- [🤖 Artificial Intelligence](Fourth%20Semester/Artificial_Intelligence/)   
-- [🗄️Database Management Systems](Fourth%20Semester/Database_Management_Systems/)
-- [🛠️ Software_Engineering](Fourth%20Semester/Software_Engineering/)
-- [📐 Systems for Design and Implementation](Fourth%20Semester/Systems_for_Design_and_Implementation/)
-- [🌍 Web Programming](Fourth%20Semester/Web_Programming) 
+## 📂 Fourth Semester 
+- [🤖 Artificial Intelligence](4th%20Semester/Artificial_Intelligence/)  
+- [🗄️Database Management Systems](4th%20Semester/Database_Management_Systems/)
+- [🛠️ Software_Engineering](4th%20Semester/Software_Engineering/)
+- [📐 Systems for Design and Implementation](4th%20Semester/Systems_for_Design_and_Implementation/)
+- [🌍 Web Programming](4th%20Semester/Web_Programming) 
 
