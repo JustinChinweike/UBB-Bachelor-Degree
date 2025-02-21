@@ -21,3 +21,9 @@
 
 # SECOND YEAR
 ### 📂 Third Semester 
+- [🌐 Computer Networks](3rd%20Semester/Computer%20Networks/)
+- [🗄️ Database](3rd%20Semester/Database/)
+- [🧠 Functional and Logic Programming](3rd%20Semester/Functional%20and%20Logic%20Programming/)
+- [🧩 Advanced Methods of Programming (MAP)](3rd%20Semester/MAP/)
+- [📊 Probability and Statistics](3rd%20Semester/Probability%20and%20Statistics/)
+
