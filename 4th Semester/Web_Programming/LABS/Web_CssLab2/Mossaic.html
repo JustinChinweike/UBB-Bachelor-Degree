@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Mosaic Tiles Explained</title>
+  <style>
+    
+    body {
+      margin: 0; 
+      padding: 0; 
+      background: #121212; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      height: 100vh; 
+      overflow: hidden; 
+    }
+
+
+
+    
+    .mosaic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+      gap: 12px; 
+      width: 80%; 
+    }
+
+    
+    .tile {
+      aspect-ratio: 1; 
+     border-radius: 30% 70% 40% 60%; 
+      background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fad0c4); 
+      /* Creates a smooth color blend on tiles. */
+      background-size: 200% 200%; 
+      transition: transform 0.5s ease, border-radius 0.5s ease, background-position 1s ease; 
+      
+    }
+
+
+  
+
+/* How tiles behave when you hover your mouse over them (like magic!)*/
+    .tile:hover {
+      transform: scale(1.15) rotate(15deg); 
+
+      /*Tiles grow bigger and slightly rotate on hover. */
+      border-radius: 60% 40% 70% 30%; 
+      background-position: 100% 100%; 
+      
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+
+      }
+       
+
+
+
+
+
+    /* Makes every odd tile a different color for variety. */
+    .tile:nth-child(odd) {
+      background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+
+      background-size: 200% 200%; 
+    }
+
+    /* Every third tile gets another special gradient color. */
+    .tile:nth-child(3n) {
+      background: linear-gradient(120deg, #fad0c4, #ffd1ff); 
+     
+      background-size: 200% 200%; 
+    }
+
+    /* Make the tile pop out when clicked */
+    .tile:active {
+      transform: scale(1.5) rotate(15deg); 
+      z-index: 20; 
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); 
+    } 
+
+
+  </style>
+</head>
+<body>
+  <!-- Container holding all tiles in a nice arrangement. -->
+  <div class="mosaic-grid">
+    <!-- Individual tiles, each will react magically when hovered over! -->
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+    <div class="tile"></div>
+  </div>
+</body>
+</html>

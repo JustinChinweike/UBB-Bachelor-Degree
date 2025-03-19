@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            position: relative;
+            width: 500px;
+        }
+        .large-image {
+            width: 100%;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            background-color: #ccc; /* Fallback color */
+        }
+        .thumbnails {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 10px;
+        }
+        .thumbnails label {
+            width: 80px;
+            height: 50px;
+            cursor: pointer;
+            /*border-radius: 5px;*/
+            border: 2px solid transparent;
+            transition: 0.3s;
+            background-size: cover;
+            background-position: center;
+        }
+        .thumbnails label:hover {
+            border-color: #555;
+        }
+        /* Assigning background images explicitly */
+        .thumb1 {
+            background-image: url('image_1.jpg');
+        }
+        .thumb2 {
+            background-image: url('image_2.jpg');
+        }
+        .thumb3 {
+            background-image: url('image_3.jpg');
+        }
+
+        .large-image {
+    background-image: url('large_image.jpg'); /* Default image */
+}
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="large-image" id="display"></div>
+        <div class="thumbnails">
+            <label class="thumb1" onmouseover="document.getElementById('display').style.backgroundImage='url(image_1.jpg)'"></label>
+            <label class="thumb2" onmouseover="document.getElementById('display').style.backgroundImage='url(image_2.jpg)'"></label>
+            <label class="thumb3" onmouseover="document.getElementById('display').style.backgroundImage='url(image_3.jpg)'"></label>
+        </div>
+    </div>
+</body>
+</html>
