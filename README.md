@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/ubb_logo.png" alt="UBB Logo" width="150"/>
+</p>
+
 # UBB-Bachelor-Degree
 🚀 UBB Computer Science Projects
 
