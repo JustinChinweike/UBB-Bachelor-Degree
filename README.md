@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/ubb_logo.png" alt="UBB Logo" width="150"/>
+  <img src="assets/ubb_logo.png" alt="UBB Logo"/>
 </p>
 
 # UBB-Bachelor-Degree
