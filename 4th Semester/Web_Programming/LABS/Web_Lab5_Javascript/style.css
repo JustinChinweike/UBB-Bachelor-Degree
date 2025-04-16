@@ -1,0 +1,131 @@
+/* General reset and fonts */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e0eafc);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+#combo-container {
+    width: 320px;
+    padding: 25px 20px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Floating label */
+#combo-container label {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    color: #6c63ff;
+    background: white;
+    padding: 0 5px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+
+/* Input and focus behavior */
+#combo-input {
+    width: 100%;
+    padding: 18px 15px 8px;
+    font-size: 16px;
+    border: 2px solid #6c63ff;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: #fefefe;
+    color: #333;
+}
+
+#combo-input:focus {
+    border-color: #4e4cff;
+    box-shadow: 0 0 8px #4e4cff77;
+}
+
+
+
+#suggestion-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+    background: white;
+    display: none;
+    position: absolute;
+    width: calc(100% - 40px);
+    z-index: 99;
+}
+
+#suggestion-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+#suggestion-list li:hover {
+    background-color: #f0f0ff;
+}
+
+
+/* Select box with dropdown icon */
+#combo-select {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #6c63ff;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    outline: none;
+    margin-top: 15px;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="%236c63ff" height="24" viewBox="0 0 24 24" width="24"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+#combo-select:focus {
+    border-color: #4e4cff;
+    box-shadow: 0 0 8px #4e4cff77;
+}
+
+/* Label shrink effect */
+#combo-input:focus + label,
+#combo-input:not(:placeholder-shown) + label {
+    top: -8px;
+    font-size: 12px;
+    color: #4e4cff;
+}
+
+/* Glow animation */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #6c63ff; }
+    50% { box-shadow: 0 0 20px #6c63ff; }
+    100% { box-shadow: 0 0 5px #6c63ff; }
+}
+
+#combo-input.added {
+    animation: glow 1s ease-out;
+}
+
+/* Responsive tweaks */
+@media (max-width: 400px) {
+    #combo-container {
+        width: 90%;
+    }
+}

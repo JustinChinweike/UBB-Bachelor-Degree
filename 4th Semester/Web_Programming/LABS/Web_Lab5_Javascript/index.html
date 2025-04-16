@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Editable Combo Box</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <div id="combo-container"> 
+        <input type="text" id="combo-input" placeholder="Select or type input..." /> 
+        <ul id="suggestion-list"></ul>
+
+        <textarea id="bulk-input" placeholder="Enter names separated by commas (e.g. justin1, cora1)"></textarea>
+        <button id="add-bulk">Add Names</button>
+
+
+
+        <select id="combo-select" onchange="selectToInput()" multiple>
+            <option value="Justin">Justin</option>
+            <option value="Cora">Cora</option>
+            <option value="Cherry">Cherry</option>
+            <option value="NahNah">NahNah</option>
+            <option value="Idon'tKnow">Idon'tKnow</option>
+
+        </select>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
