@@ -45,7 +45,7 @@ This full-stack web application enables hospital staff to manage appointments (s
   - Stores uploads in `uploads/` and serves them via `/uploads/*`  
   - Frontend can attach/view files per appointment
 
----
+
 
 ## 🚀 Technology Stack
 
@@ -64,49 +64,69 @@ This full-stack web application enables hospital staff to manage appointments (s
   - Recharts (charts)  
   - Axios (HTTP client)
 
----
+
 
 ## 📁 Folder Structure
-HospitalSchedulingApp/ ├── backend/ # Express/TypeScript server │ ├── src/ │ │ ├── controllers/ # scheduleController.ts │ │ ├── models/ # scheduleModel.ts (in-memory + Zod schema) │ │ ├── routes/ # scheduleRoutes.ts, downloadRoutes.ts │ │ ├── socket.ts # initSocket, io export │ │ └── index.ts # server entry point │ ├── uploads/ # stored uploaded files │ ├── package.json │ └── tsconfig.json └── frontend/ # Vite/React client ├── src/ │ ├── components/ # UI components (forms, charts, status, etc.) │ ├── context/ # ScheduleContext, OfflineContext │ ├── hooks/ # useSchedule, useOffline, useToast │ ├── pages/ # Index, Add/Edit/List pages │ ├── utils/ # formValidation, apiClient │ └── main.tsx # app entry point ├── package.json ├── vite.config.ts # dev server on port 8080 └── tailwind.config.ts
 
+Assignement5/
+├── backend/
+│   ├── src/
+│   │   ├── controllers/     # scheduleController.ts
+│   │   ├── models/          # in-memory model + Zod schemas
+│   │   ├── routes/          # scheduleRoutes.ts, downloadRoutes.ts
+│   │   ├── socket.ts        # initSocket & export io
+│   │   └── index.ts         # server entry point
+│   ├── uploads/             # stored file uploads
+│   ├── package.json         # server scripts & deps
+│   └── tsconfig.json        # TypeScript config
+└── frontend/
+    ├── public/              # index.html & static assets
+    ├── src/
+    │   ├── api/             # apiClient.ts
+    │   ├── components/      # UI components (forms, charts, alerts…)
+    │   ├── context/         # ScheduleContext, OfflineContext
+    │   ├── hooks/           # useSchedule, useOffline, useToast
+    │   ├── pages/           # Index, Add/Edit/List pages
+    │   ├── utils/           # formValidation, helpers
+    │   └── main.tsx         # React app entry point
+    ├── package.json         # client scripts & deps
+    ├── vite.config.ts       # Vite config (port 8080, alias `@`)
+    └── tailwind.config.ts   # Tailwind CSS config
 
-
----
 
 ## ⚙️ Installation & Running Instructions
 
-1. **Clone the repository**  
-   ```bash
+```sh
+1. Clone the repository 
    git clone <YOUR_GITHUB_URL>
    cd HospitalSchedulingApp
 
-2. **Backend Setup**
-   ```bash
+
+2. Backend Setup
    cd backend
    npm install
    npm run dev
-  # Server will listen on http://localhost:5000
+   Server will listen on http://localhost:5000
   
-3. **Frontend Setup**
-   ```bash
-   cd ../frontend
+3. Frontend Setup
+   cd frontend
    npm install
    npm run dev
-# App will open at http://localhost:8080
-   
+   App will open at http://localhost:8080
 
 4. Access the Application
 Open your browser at http://localhost:8080, which communicates with the backend at http://localhost:5000.
 
-## 🧪 Testing Instructions
-# Backend Unit Tests
-```bash
+```
+
+##🧪 Testing
+Backend Unit Tests
+```sh
 cd backend
 npm test
-````
-#All Jest tests (in src/controllers/__tests__/scheduleController.test.ts) should pass.
-
-# Frontend
+All Jest tests (in src/controllers/__tests__/scheduleController.test.ts) should pass.
+```
+## Frontend
 Manual testing by interacting with the UI, including offline mode, real-time updates, charts, and file uploads.
 
 
