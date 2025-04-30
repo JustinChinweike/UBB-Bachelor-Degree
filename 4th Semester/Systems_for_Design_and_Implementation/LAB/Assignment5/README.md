@@ -93,7 +93,7 @@ Assignment5/
     ├── package.json        # client scripts & deps
     ├── vite.config.ts      # Vite config (port 8080, alias @)
     └── tailwind.config.ts  # Tailwind CSS config
-
+```
 
 ## ⚙️ Installation & Running Instructions
 
