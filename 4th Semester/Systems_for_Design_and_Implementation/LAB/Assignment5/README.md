@@ -68,7 +68,32 @@ This full-stack web application enables hospital staff to manage appointments (s
 
 ## 📁 Folder Structure
 
-Assignment5/ ├── backend/ │ ├── src/ │ │ ├── controllers/ # scheduleController.ts │ │ ├── models/ # in-memory model & Zod schemas │ │ ├── routes/ # scheduleRoutes.ts, downloadRoutes.ts │ │ ├── socket.ts # initSocket & export io │ │ └── index.ts # server entry point │ ├── uploads/ # stored file uploads │ ├── package.json # server scripts & deps │ └── tsconfig.json # TypeScript config └── frontend/ ├── public/ # index.html & static assets ├── src/ │ ├── api/ # apiClient.ts │ ├── components/ # UI components (forms, charts, alerts…) │ ├── context/ # ScheduleContext, OfflineContext │ ├── hooks/ # useSchedule, useOffline, useToast │ ├── pages/ # Index, Add/Edit/List pages │ ├── utils/ # formValidation, helpers │ └── main.tsx # React app entry point ├── package.json # client scripts & deps ├── vite.config.ts # Vite config (port 8080, alias @) └── tailwind.config.ts # Tailwind CSS config
+```text
+Assignment5/
+├── backend/
+│   ├── src/
+│   │   ├── controllers/    # scheduleController.ts
+│   │   ├── models/         # in-memory model & Zod schemas
+│   │   ├── routes/         # scheduleRoutes.ts, downloadRoutes.ts
+│   │   ├── socket.ts       # initSocket & export io
+│   │   └── index.ts        # server entry point
+│   ├── uploads/            # stored file uploads
+│   ├── package.json        # server scripts & deps
+│   └── tsconfig.json       # TypeScript config
+└── frontend/
+    ├── public/             # index.html & static assets
+    ├── src/
+    │   ├── api/            # apiClient.ts
+    │   ├── components/     # UI components (forms, charts, alerts…)
+    │   ├── context/        # ScheduleContext, OfflineContext
+    │   ├── hooks/          # useSchedule, useOffline, useToast
+    │   ├── pages/          # Index, Add/Edit/List pages
+    │   ├── utils/          # formValidation, helpers
+    │   └── main.tsx        # React app entry point
+    ├── package.json        # client scripts & deps
+    ├── vite.config.ts      # Vite config (port 8080, alias @)
+    └── tailwind.config.ts  # Tailwind CSS config
+
 
 ## ⚙️ Installation & Running Instructions
 
