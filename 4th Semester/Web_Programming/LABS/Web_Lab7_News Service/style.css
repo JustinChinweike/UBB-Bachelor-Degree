@@ -1,0 +1,211 @@
+
+/* ──────base page────────────────────────────────────────────────────────── */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, Arial, sans-serif; /* fallback fonts */
+    color: #222; /* dark mode text color */
+}
+
+
+/* center the whole card on large screens*/ 
+.container{ 
+    max-width: 960px; /* max width of the page */
+    width: 95%; /* width of the page */
+    box-sizing: border-box; /* include padding and border in width */
+    margin: 2rem auto 4rem; /* center the page */
+}
+
+/* headings */
+
+h1 {
+    margin-top: 0 ; /* remove top margin */
+    font-size: 2rem; /* large heading size */
+    text-align: center; /* center the heading */
+    
+}
+
+h3 {
+    margin-top: 1.5rem; /* top margin */
+    text-align: center; /* center the heading */
+    font-weight: 500; /* medium weight */
+    color: #555; /* dark mode text color */
+    
+}
+
+
+/* ──────filter form ────────────────────────────────────────────────────────── */
+
+
+
+form#filter-form {
+    display: flex; /* flexbox layout */
+    flex-wrap: wrap; /* wrap items to next line */
+    justify-content: center; /* center items */
+    align-items: center; /* center items vertically */
+    gap: .6rem; /* gap between items */
+    margin-bottom: 1rem; /* bottom margin */
+    font-size: .95rem; /* font size */
+}
+
+form#filterForm select, 
+form#filterForm input[type="text"] {
+    padding: .3rem .5rem; /* padding inside input */
+    font-size: .95rem; /* font size */
+    border: 1px solid #bbb; /* border color */
+    border-radius: 4px; /* rounded corners */
+
+}
+
+form#filterForm button{ 
+    padding: .4rem .9rem; /* padding inside button */
+    font-size: .95rem; /* font size */
+    border: 1px solid #246; /* border color */
+    background: #357; /* background color */
+    color: #fff; /* text color */
+    border-radius: 4px; /* rounded corners */
+    cursor: pointer; /* pointer cursor */
+
+}
+
+form#filterForm button:hover {
+    background: #246; /* background color on hover */
+}
+
+
+/* ──────add user form ──────────────────────────────────────────────────────── */
+
+
+
+form#addUserForm {
+    display: flex; /* flexbox layout */
+    flex-direction: column; /* column layout */
+    gap: 1rem; /* gap between items */
+    max-width: 350px; /* max width of the form */
+    margin : 2rem auto 0 auto; /* center the form */
+    font-size: .95rem; /* font size */
+}
+
+
+form#addUserForm label {
+    display: flex; /* flexbox layout */
+   flex-direction: column; /* column layout */ 
+   font-weight: 500; /* medium weight */
+   gap : .3rem; /* gap between label and input */
+    
+}
+
+
+form#addUserForm input , 
+form#addUserForm select { 
+    padding: .3rem .5rem; /* padding inside input */
+    font-size: .95rem; /* font size */
+    border: 1px solid #bbb; /* border color */
+    border-radius: 4px; /* rounded corners */
+}
+
+
+form#addUserForm button{ 
+    padding: .4rem .9rem; /* padding inside button */
+    font-size: .95rem; /* font size */
+    border: 1px solid #246; /* border color */
+    background: #357; /* background color */
+    color: #fff; /* text color */
+    border-radius: 4px; /* rounded corners */
+    cursor: pointer; /* pointer cursor */
+    margin-top: .5rem; /* top margin */
+
+
+}
+
+form #addUserForm button:hover {
+    background: #246; /* background color on hover */
+}
+
+
+
+/* ── message / error ──────────────────────────────────────────── */
+.error {
+    color: #b00;
+    text-align: center;
+}
+
+/* ── news table ───────────────────────────────────────────────── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: .93rem;
+}
+
+th, td {
+    padding: .6rem .55rem;
+    border: 1px solid #e3e3e3;
+}
+
+th {
+    background: #f1f1f1;
+    text-align: left;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(odd) {
+    background: #fafafa;
+}
+
+tbody tr:hover {
+    background: #eef6ff;
+}
+
+/* snippet column: stay within view and show ellipsis */
+td.snippet {
+    max-width: 420px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* responsive tweak — stack form on narrow screens */
+@media (max-width: 600px) {
+    form#filterForm {
+        flex-direction: column;
+        gap: .4rem;
+    }
+    form#filterForm label {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+/* 
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1, h3 {
+    text-align: center;
+}
+form {
+    margin: 20px auto;
+    text-align: center;
+}
+label {
+    margin-right: 10px;
+}
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+th {
+    background-color: #f2f2f2;
+}
+.error {
+    color: red;
+    text-align: center;
+}  */
