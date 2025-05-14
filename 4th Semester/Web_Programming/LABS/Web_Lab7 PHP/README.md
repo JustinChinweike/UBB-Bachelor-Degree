@@ -60,10 +60,6 @@ A full-stack PHP web application for managing and browsing news articles, built 
 - **Web Server:** Apache (included in [XAMPP](https://www.apachefriends.org/))
 - **Browser:** Modern browser with JavaScript enabled
 
-> **Note:**  
-> This project was developed and tested using [XAMPP](https://www.apachefriends.org/), which provides Apache, PHP, and MySQL in a single package.  
-> Simply place the project folder inside your `htdocs` directory and access it via `http://localhost/News_Service`.
-
 
 ---
 
@@ -137,4 +133,9 @@ A full-stack PHP web application for managing and browsing news articles, built 
 - [W3Schools PHP Tutorial](http://www.w3schools.com/php)
 - [W3Schools AJAX Tutorial](http://www.w3schools.com/ajax)
 - [Lab Documentation](http://www.cs.ubbcluj.ro/~forest/wp)
+---
+> **Note:**  
+> This project was developed and tested using [XAMPP](https://www.apachefriends.org/), which provides Apache, PHP, and MySQL in a single package.  
+> Simply place the project folder inside your `htdocs` directory and access it via `http://localhost/News_Service`.
 
+---
