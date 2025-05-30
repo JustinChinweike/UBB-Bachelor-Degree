@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="text-center mt-5">
+    <h1 class="display-4">Welcome, @User.Identity?.Name 👋</h1>
+    <p class="lead mt-3">What would you like to do today?</p>
+
+    <div class="d-grid gap-3 d-md-flex justify-content-center mt-4">
+        <a asp-controller="News" asp-action="Index" class="btn btn-primary btn-lg">📰 View News</a>
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-controller="News" asp-action="Create" class="btn btn-success btn-lg">➕ Add News</a>
+        }
+        <a asp-controller="Account" asp-action="Logout" class="btn btn-outline-danger btn-lg">Logout</a>
+    </div>
+</div>

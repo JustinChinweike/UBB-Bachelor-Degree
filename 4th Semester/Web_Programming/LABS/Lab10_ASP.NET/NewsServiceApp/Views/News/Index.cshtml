@@ -1,0 +1,53 @@
+﻿@model IEnumerable<NewsServiceApp.Models.NewsItem>
+@{
+    ViewData["Title"] = "All News";
+}
+
+<h2>News</h2>
+
+<div class="row g-3 mb-3">
+    <div class="col-sm-3">
+        <label class="form-label">Category</label>
+        <select id="cat" class="form-select">
+            <option value="">All</option>
+            @foreach (var c in Model.Select(n => n.Category).Distinct())
+            {
+                <option>@c</option>
+            }
+        </select>
+    </div>
+    <div class="col-sm-3">
+        <label class="form-label">From</label>
+        <input id="from" type="date" class="form-control" />
+    </div>
+    <div class="col-sm-3">
+        <label class="form-label">To</label>
+        <input id="to" type="date" class="form-control" />
+    </div>
+    <div class="col-sm-3 align-self-end">
+        <button id="filterBtn" class="btn btn-primary w-100">Filter</button>
+    </div>
+</div>
+
+<div id="newsTable">
+    @await Html.PartialAsync("_NewsList", Model)
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function load() {
+            const data = {
+                category: $('#cat').val(),
+                from: $('#from').val(),
+                to: $('#to').val()
+            };
+            $.get('@Url.Action("Filter", "News")', data, html => $('#newsTable').html(html));
+        }
+
+        // initial load remembers filters
+        $(function () {
+            $('#filterBtn').click(load);
+        });
+    </script>
+}
