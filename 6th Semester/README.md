@@ -1,1 +1,1 @@
-### Class Projects for the last semester of my Bachelor
+## Class Projects for the last semester of my Bachelor
