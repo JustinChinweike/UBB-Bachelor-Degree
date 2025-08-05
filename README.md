@@ -46,4 +46,6 @@
 - [🧑‍💼 Internship](5th%20Semester/Internship/)
 - [📱 Mobile application programming](5th%20Semester/Mobile%20application%20programming/)
 - [🖧 Parallel and distributed programming](5th%20Semester/Parallel%20and%20distributed%20programming/)
+- [🔐 Public-Key Cryptography](5th%20Semester/Public-key%20cryptography/)
+
 
