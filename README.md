@@ -40,4 +40,4 @@
 
 ## THIRD YEAR
 ### 📂 Fifth Semester
-- [❤️ Affective Computing](5th%20Semester/Affective%20Computing/) 
+- [❤️ Affective Computing](5th%20Semester/Affective%20computing) 
