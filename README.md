@@ -42,3 +42,4 @@
 ### 📂 Fifth Semester
 - [❤️ Affective Computing](5th%20Semester/Affective%20computing/)
 - [💡Designing innovative products](5th%20Semester/Designing%20innovative%20products/)
+- [🧮 Formal languages and compiler design](5th%20Semester/Formal%20languages%20and%20compiler%20design/)
