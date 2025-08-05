@@ -49,5 +49,5 @@
 - [🔐 Public-Key Cryptography](5th%20Semester/Public-key%20cryptography/)
 
 ### 📂 Sixth Semester
-
+-[👁️ Computer Vision and Deep Learning](6th%20Semester/Computer%20Vision%20and%20Deep%20Learning/)
 
