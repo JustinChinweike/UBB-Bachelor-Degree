@@ -40,4 +40,5 @@
 
 ## THIRD YEAR
 ### 📂 Fifth Semester
-- [❤️ Affective Computing](5th%20Semester/Affective%20computing) 
+- [❤️ Affective Computing](5th%20Semester/Affective%20computing/)
+- [💡Designing innovative products](5th%20Semester/Designing%20innovative%20products/)
