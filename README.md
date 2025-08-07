@@ -52,6 +52,7 @@
 - [👁️ Computer Vision and Deep Learning](6th%20Semester/Computer%20Vision%20and%20Deep%20Learning/)
 - [🧾 History of computer science](6th%20Semester/History%20of%20computer%20science/)
 - [🗣️ Introduction to Natural Language Processing](6th%20Semester/Introduction%20to%20Natural%20Language%20Processing/)
+- [➗ Numerical calculus](6th%20Semester/Numerical%20calculus/)
 
 
 
