@@ -53,6 +53,8 @@
 - [🧾 History of computer science](6th%20Semester/History%20of%20computer%20science/)
 - [🗣️ Introduction to Natural Language Processing](6th%20Semester/Introduction%20to%20Natural%20Language%20Processing/)
 - [➗ Numerical calculus](6th%20Semester/Numerical%20calculus/)
+- [📝 Software systems verification and validation](6th%20Semester/Software%20systems%20verification%20and%20validation/)
+- [✅ Software systems verification and validation](6th%20Semester/Software%20systems%20verification%20and%20validation/)
 
 
 
