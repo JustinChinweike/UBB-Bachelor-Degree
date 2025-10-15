@@ -71,7 +71,6 @@ void transfers(int thread_id) {
                 std::lock_guard<std::mutex> lock1(accountLocks[from], std::adopt_lock);
                 std::lock_guard<std::mutex> lock2(accountLocks[to], std::adopt_lock);
 
-                // ⬇️ do the mutation while locks are held
                 if (Balances[from] >= amount) {
                     Balances[from] -= amount;
                     Balances[to] += amount;
@@ -138,3 +137,4 @@ int main() {
 
     return 0;
 }
+
