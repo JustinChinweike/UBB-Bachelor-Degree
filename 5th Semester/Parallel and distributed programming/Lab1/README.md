@@ -1,0 +1,6 @@
+ #  Bank accounts
+At a bank, we have to keep track of the balance of some accounts.
+
+We have concurrently run transfer operations, to be executer on multiple threads. Each operation transfers a given amount of money from one account to someother account.
+
+From time to time, as well as at the end of the program, a consistency check shall be executed. It shall verify that the total amount of money in all accounts is the same as in the beginning.
