@@ -1,4 +1,4 @@
-#Bank accounts
+# Bank accounts
 At a bank, we have to keep track of the balance of some accounts.
 
 We have concurrently run transfer operations, to be executer on multiple threads. Each operation transfers a given amount of money from one account to someother account.
