@@ -9,7 +9,7 @@ From time to time, as well as at the end of the program, a **consistency check**
 
 ---
 
-### Requirements Summary
+# Requirements Summary
 
 -  Use multiple threads to perform random transfer operations on shared data.  
 - Protect shared data using mutexes to avoid race conditions.  
