@@ -1,31 +1,44 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
-#include <stdlib.h>
-#include<thread>
+#include <thread>
 #include <mutex>
-#include <time.h>
-#include <ctime>
-#include<chrono>
+#include <chrono>
 #include <cstdlib>
-#include<stdexcept>
+#include <stdexcept>
+#include <iomanip>
+#include <atomic>
+#include <string>
+#include <array>
 
+using namespace std;
 
-using namespace std; 
-
+// ---------------------- Configuration ----------------------
 const int no_of_accounts = 5;
-const int number_of_threads = 5; 
-const int operations_per_thread = 1000; 
+const int number_of_threads = 5;
+const int operations_per_thread = 1000;
+const int audit_interval_ms = 150; // how often auditor checks (ms)
 
-
+// ---------------------- Shared Data ----------------------
 int Balances[no_of_accounts];
 std::mutex accountLocks[no_of_accounts];
+std::mutex logMutex; // for clean log output
 int initialTotal = 0;
+atomic<bool> transfersDone{ false }; // signals auditor to stop
 
+// ---------------------- Thread-Safe Logging ----------------------
+void logMessage(int thread_id, const string& message) {
+    lock_guard<mutex> lock(logMutex);
+    auto now = chrono::system_clock::now();
+    auto ms = chrono::duration_cast<chrono::milliseconds>(
+        now.time_since_epoch()) % 100000;
+    cout << "[T" << thread_id << " | " << setw(5) << setfill('0') << ms.count()
+        << " ms] " << message << endl;
+}
 
-
-
+// ---------------------- Initialize Balances ----------------------
 void initializeBalances() {
-    srand(static_cast<unsigned int>(chrono::system_clock::now().time_since_epoch().count()));
+    srand(static_cast<unsigned int>(
+        chrono::system_clock::now().time_since_epoch().count()));
 
     initialTotal = 0;
     for (int i = 0; i < no_of_accounts; ++i) {
@@ -39,23 +52,23 @@ void initializeBalances() {
     cout << "Initial total balance: " << initialTotal << endl << endl;
 }
 
-
-
+// ---------------------- Compute Total with All Locks ----------------------
+// Lock ALL accounts in STRICT ASCENDING ORDER to avoid cycles with workers.
 int totalBalanceAtomic() {
-    // lock all accounts at once (fixed N=5 version)
-    std::lock(accountLocks[0], accountLocks[1], accountLocks[2], accountLocks[3], accountLocks[4]);
-    std::lock_guard<std::mutex> l0(accountLocks[0], std::adopt_lock);
-    std::lock_guard<std::mutex> l1(accountLocks[1], std::adopt_lock);
-    std::lock_guard<std::mutex> l2(accountLocks[2], std::adopt_lock);
-    std::lock_guard<std::mutex> l3(accountLocks[3], std::adopt_lock);
-    std::lock_guard<std::mutex> l4(accountLocks[4], std::adopt_lock);
+    // RAII locks in ascending index
+    std::array<std::unique_lock<std::mutex>, no_of_accounts> locks;
+    for (int i = 0; i < no_of_accounts; ++i) {
+        locks[i] = std::unique_lock<std::mutex>(accountLocks[i]);
+    }
 
     int sum = 0;
-    for (int i = 0; i < no_of_accounts; ++i) sum += Balances[i];
-    return sum;
+    for (int i = 0; i < no_of_accounts; ++i)
+        sum += Balances[i];
+    return sum; // locks released automatically
 }
 
-
+// ---------------------- Transfer Threads ----------------------
+// Lock ONLY THE TWO accounts, ALWAYS lower index first, using explicit .lock()
 void transfers(int thread_id) {
     try {
         for (int i = 0; i < operations_per_thread; ++i) {
@@ -63,72 +76,102 @@ void transfers(int thread_id) {
             int to = rand() % no_of_accounts;
             if (from == to) continue;
 
+            int a = std::min(from, to);
+            int b = std::max(from, to);
             int amount = rand() % 50 + 1;
 
-            // Deadlock-free locking
-            if (from < to) {
-                std::lock(accountLocks[from], accountLocks[to]);
-                std::lock_guard<std::mutex> lock1(accountLocks[from], std::adopt_lock);
-                std::lock_guard<std::mutex> lock2(accountLocks[to], std::adopt_lock);
+            // lock lower then higher deterministically (no std::lock here)
+            accountLocks[a].lock();
+            accountLocks[b].lock();
 
-                if (Balances[from] >= amount) {
-                    Balances[from] -= amount;
-                    Balances[to] += amount;
-                }
+            // adopt into guards to ensure unlock on scope exit
+            std::lock_guard<std::mutex> g1(accountLocks[a], std::adopt_lock);
+            std::lock_guard<std::mutex> g2(accountLocks[b], std::adopt_lock);
+
+            // Perform transfer from 'from' to 'to'
+            if (Balances[from] >= amount) {
+                Balances[from] -= amount;
+                Balances[to] += amount;
+                logMessage(thread_id, "Transferred " + to_string(amount) +
+                    " from A" + to_string(from) +
+                    " to A" + to_string(to));
             }
             else {
-                std::lock(accountLocks[to], accountLocks[from]);
-                std::lock_guard<std::mutex> lock1(accountLocks[to], std::adopt_lock);
-                std::lock_guard<std::mutex> lock2(accountLocks[from], std::adopt_lock);
-
-                if (Balances[from] >= amount) {
-                    Balances[from] -= amount;
-                    Balances[to] += amount;
-                }
+                logMessage(thread_id, "Skipped transfer (" +
+                    to_string(amount) + " > balance) from A" +
+                    to_string(from));
             }
 
-            // Periodic consistency check
-            if (i % 200 == 0) {
-                int check = totalBalanceAtomic();
-                if (check != initialTotal) {
-                    throw std::runtime_error("Inconsistency detected during execution!");
-                }
-            }
+            // Small delay for more visible interleaving (optional)
+            if (i % 150 == 0)
+                this_thread::sleep_for(chrono::milliseconds(1));
         }
     }
-    catch (const std::exception& e) {
-        cerr << "Exception in thread " << thread_id << ": " << e.what() << endl;
+    catch (const exception& e) {
+        logMessage(thread_id, string("Exception: ") + e.what());
     }
+
+    logMessage(thread_id, "Thread completed all operations.");
 }
 
+// ---------------------- Auditor Thread ----------------------
+void auditorThread() {
+    const int auditor_id = 99; // special ID for logs
+    while (!transfersDone.load()) {
+        this_thread::sleep_for(chrono::milliseconds(audit_interval_ms));
 
+        int total = totalBalanceAtomic();
+        if (total == initialTotal)
+            logMessage(auditor_id, "Audit check OK: total = " + to_string(total));
+        else
+            logMessage(auditor_id, "⚠️ Audit check FAILED: total = " + to_string(total) +
+                " (expected " + to_string(initialTotal) + ")");
+    }
+
+    // Final audit after transfers end
+    int finalTotal = totalBalanceAtomic();
+    if (finalTotal == initialTotal)
+        logMessage(auditor_id, " Final audit OK: total = " + to_string(finalTotal));
+    else
+        logMessage(auditor_id, " Final audit FAILED: total = " + to_string(finalTotal));
+}
+
+// ---------------------- Main ----------------------
 int main() {
     initializeBalances();
+    cout << "Initial Balances Total: " << initialTotal << endl;
 
-    cout << "Initial Balances: " << initialTotal << endl;
+    auto start = chrono::high_resolution_clock::now();
 
-    auto start = std::chrono::high_resolution_clock::now(); 
-
-    // start threads 
-    std::vector<std::thread> threads;
-
+    // Launch transfer threads
+    vector<thread> threads;
     for (int i = 0; i < number_of_threads; i++) {
         threads.emplace_back(transfers, i);
-
-    }
-    // wait for all threads 
-    for (auto& t : threads) {
-        t.join();
+        logMessage(-1, "Launched transfer thread " + to_string(i));
     }
 
-    auto end = std::chrono::high_resolution_clock::now(); 
-    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start); 
+    // Launch independent auditor
+    thread auditor(auditorThread);
+    logMessage(-1, "Launched auditor thread.");
+
+    // Wait for transfer threads to complete
+    for (auto& t : threads) t.join();
+
+    // Notify auditor to finish
+    transfersDone.store(true);
+    auditor.join();
+
+    auto end = chrono::high_resolution_clock::now();
+    auto duration = chrono::duration_cast<chrono::milliseconds>(end - start);
 
     int finalTotal = totalBalanceAtomic();
 
-    cout << "Final Total Balance: " << finalTotal<< endl;
-    cout << "Execution Time: " << duration.count() << "ms" << endl; 
+    cout << "\n--- Final Report ---" << endl;
+    for (int i = 0; i < no_of_accounts; ++i)
+        cout << "Account[" << i << "] = " << Balances[i] << endl;
 
+    cout << "Final Total Balance: " << finalTotal << endl;
+    cout << "Execution Time: " << duration.count() << " ms" << endl;
 
     if (finalTotal == initialTotal)
         cout << "Consistency maintained." << endl;
@@ -137,4 +180,3 @@ int main() {
 
     return 0;
 }
-
