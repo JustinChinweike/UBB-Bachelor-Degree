@@ -1,4 +1,4 @@
-#Producer-consumer synchronization
+# Producer-consumer synchronization
 
 Goal
 Create two threads, a producer and a consumer, with the producer feeding the consumer.
